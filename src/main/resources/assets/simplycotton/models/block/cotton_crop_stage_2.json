@@ -1,0 +1,6 @@
+{
+	"parent": "simplycotton:block/cross",
+	"textures": {
+		"cross": "simplycotton:blocks/cotton_stage_2"
+	}
+}
