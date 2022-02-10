@@ -7,6 +7,7 @@ import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
+import net.tosiv.simplycotton.SimplyCotton;
 
 import java.util.List;
 
@@ -20,6 +21,8 @@ public class CottonCropItem extends Item
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-        tooltip.add((new TranslatableText("item.simplycotton.cotton.line1").formatted(Formatting.GREEN)));
+        if (SimplyCotton.config.shouldRenderToolTip()) {
+            tooltip.add((new TranslatableText("item.simplycotton.cotton.line1").formatted(Formatting.GREEN)));
+        }
     }
 }

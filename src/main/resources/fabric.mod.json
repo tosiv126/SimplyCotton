@@ -9,12 +9,12 @@
     "Tosiv"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/simply-cotton",
     "sources": "https://github.com/tosiv126/SimplyCotton"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/simplycotton/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -34,8 +34,5 @@
     "fabric": "*",
     "minecraft": "1.18.x",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
